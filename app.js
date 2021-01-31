@@ -31,7 +31,7 @@ $(document).ready(function(){
 
     $("button").click(function(){
         var toDoName = $("input").val(); //read the input and save it to var
-        var newListItem = $('<li>'+ toDoName +'</li>');
+        var newListItem = $('<li>'+ toDoName +'<button class="delete-item-button">Delete</button></li>'); // we create a new list 
         newListItem.click(handleClasses);
         $("ul").append(newListItem); //append the var in the list and use the function
     })
@@ -39,7 +39,7 @@ $(document).ready(function(){
 
     $("li").click(handleClasses);
         
-    
+
 
     
         
