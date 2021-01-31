@@ -1,0 +1,49 @@
+* {
+    border: 1px solid red;
+    padding: 0;
+    margin: 0;
+}
+body, button, input{
+    font-family: 'Yusei Magic', sans-serif;
+}
+header {
+    text-align: center;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #f87e00;
+}
+header form {
+    display: inline;
+}
+button {
+    border-radius: 5px;
+    border: 2px solid #428f3d;
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 20px;
+}
+input {
+    font-size: 20px;
+}
+li {
+    padding: 10px 0 0 10px;
+    background-color: #428f3d;
+
+}
+h1 {
+    width: 100%;
+}
+.create-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li:hover {
+    background-color: #61786a ;
+}
+.done-item {
+    background-color: #4a5c51;
+    text-decoration: line-through;
+}
