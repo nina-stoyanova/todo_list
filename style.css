@@ -1,5 +1,4 @@
 * {
-    border: 1px solid red;
     padding: 0;
     margin: 0;
 }
@@ -12,7 +11,7 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #f87e00;
+    background-color: #FFCB77;
 }
 header form {
     display: inline;
@@ -29,8 +28,10 @@ input {
 }
 li {
     padding: 10px 0 0 10px;
-    background-color: #428f3d;
+    background-color: #17C3B2;
     position: relative;
+    cursor: pointer;
+    border-bottom: 1px solid black;
 
 }
 h1 {
@@ -42,10 +43,10 @@ h1 {
     align-items: center;
 }
 li:hover {
-    background-color: #61786a ;
+    background-color: #17C3B2;
 }
-.done-item {
-    background-color: #4a5c51;
+main ul li.done-item {
+    background-color: #227C9D;
     text-decoration: line-through;
 }
 .delete-item-button {

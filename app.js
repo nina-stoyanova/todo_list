@@ -19,7 +19,6 @@
 $(document).ready(function(){
 
     function handleClasses(){
-        console.log(this);
         var itemHasDoneClass = $(this).hasClass("done-item"); // check if there is a class (return true/false)
         if (itemHasDoneClass === true) {  // if we have a class
             $(this).removeClass("done-item"); // remove the class    
@@ -28,18 +27,26 @@ $(document).ready(function(){
         }
     }
 
+    function linkDeleteButton(){        //remove buttons
+        $(".delete-item-button").click(function(){
+            $(this).parent().remove();             
+        })
+    }
 
-    $("button").click(function(){
+
+    $(".add-item-button").click(function(){
         var toDoName = $("input").val(); //read the input and save it to var
-        var newListItem = $('<li>'+ toDoName +'<button class="delete-item-button">Delete</button></li>'); // we create a new list 
-        newListItem.click(handleClasses);
-        $("ul").append(newListItem); //append the var in the list and use the function
+        var newListItem = $('<li>'+ toDoName +'<i class="fas fa-trash-alt delete-item-button"></i></li>'); // we create jquery variable
+        newListItem.click(handleClasses); // add click to the variable
+        $("ul").append(newListItem); //append the var in the list and here we create the link item
+        linkDeleteButton();
     })
 
 
     $("li").click(handleClasses);
-        
+    linkDeleteButton();    
 
+    
 
     
         
